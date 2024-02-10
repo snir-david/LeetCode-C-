@@ -16,4 +16,7 @@ add_executable(LeetCode_150_C__ InterleavingString.cpp
         RemoveNNodeList.cpp
         SearchRotatedSortedArray.cpp
         CombinationSum.cpp
-        FirstIndexOfOccurence.cpp)
+        FirstIndexOfOccurence.cpp
+        JumpGameII.cpp
+        MaximumSubarray.cpp
+        ReveresedLinkList.cpp)
