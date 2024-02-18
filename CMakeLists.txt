@@ -19,4 +19,10 @@ add_executable(LeetCode_150_C__ InterleavingString.cpp
         FirstIndexOfOccurence.cpp
         JumpGameII.cpp
         MaximumSubarray.cpp
-        ReveresedLinkList.cpp)
+        ReveresedLinkList.cpp
+        UinuqePaths.cpp
+        Search2DMatrix.cpp
+        GenerateParentheses.cpp
+        mergedString.cpp
+        MoveZeros.cpp
+        LetterCombinationOfPhoneNumber.cpp)
