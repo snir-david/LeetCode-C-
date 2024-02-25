@@ -25,4 +25,8 @@ add_executable(LeetCode_150_C__ InterleavingString.cpp
         GenerateParentheses.cpp
         mergedString.cpp
         MoveZeros.cpp
-        LetterCombinationOfPhoneNumber.cpp)
+        LetterCombinationOfPhoneNumber.cpp
+        CombinationSumIII.cpp
+        LongestCommonSubsequence.cpp
+        PermutationsII.cpp
+        WordSearch.cpp)
