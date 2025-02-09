@@ -6,17 +6,23 @@
 
 class LSWRC {
 public:
-    int lengthOfLongestSubstring(std::string s) {
-        int maxLen = 0;
-        int startIdx = 0;
-        std::unordered_map<char, int> hashMap;
-        for (int endIdx = 0; endIdx < s.size(); endIdx++) {
-            if (hashMap.find(s[endIdx]) != hashMap.end()) {
-                startIdx = std::max(hashMap[s[endIdx]] + 1 , startIdx);
-            }
-            hashMap[s[endIdx]] = endIdx;
-            maxLen = std::max(maxLen, endIdx - startIdx + 1);
+  int lengthOfLongestSubstring(std::string s) {
+    int maxLen = 0, currentLen = 0;
+    std::unordered_map<char, int> charsMap;
+    for (size_t idx = 0; idx< s.size();) {
+      auto charInMap = charsMap.find( s.at(idx));
+      if (charInMap != charsMap.end()) {
+        if (currentLen > maxLen) {
+          maxLen = currentLen;
         }
-        return maxLen;
+        idx = charInMap->second + 1;
+        currentLen = 0;
+        charsMap.clear();
+      }
+      charsMap.insert({ s.at(idx), idx});
+      ++currentLen;
+      ++idx;
     }
+    return std::max(maxLen, currentLen);
+  }
 };

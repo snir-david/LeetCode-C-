@@ -29,4 +29,5 @@ add_executable(LeetCode_150_C__ InterleavingString.cpp
         CombinationSumIII.cpp
         LongestCommonSubsequence.cpp
         PermutationsII.cpp
-        WordSearch.cpp)
+        ReverseString.cpp
+)

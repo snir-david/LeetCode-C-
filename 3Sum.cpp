@@ -2,29 +2,23 @@
 // Created by SnirN on 01/02/2024.
 //
 #include <vector>
-#include <set>
-#include <cstddef>
-
+#include <algorithm>
 class ThreeSum {
 
 
 public:
+
+  // 1 Naive approach - 3 nested loops - O(n^3).
+  // 2. choose one number from the vector, reduction to 2Sum O(n) * O(n) = O
+  // (n^2)
+  // 3. same approach as 2sum - creat hash table in n^2 time and space - O
+  // (n^2) + O(n) searching
+  // 4. sort the array
+
+
     std::vector<std::vector<int>> threeSum(std::vector<int>& nums) {
-        std::set<std::vector<int>> set;
-        size_t numsSize = nums.size();
-        int matrix[numsSize][numsSize];
-        for(int i=0; i < numsSize; i++){
-            for(int j=i+1; j < numsSize; j++){
-                for(int k=j+1; k < numsSize; k++){
-                    if(nums.at(i) + nums.at(j) +nums.at(k) == 0){
-                        std::vector<int> currentSum = {nums.at(i) , nums.at(j) ,nums.at(k)};
-                        set.insert({nums.at(i) , nums.at(j) ,nums.at(k)});
-                    }
-                }
-            }
-        }
-        std::vector<std::vector<int>> sol(set.begin(), set.end());
-        return sol;
+        std::sort(nums.begin(), nums.end());
+
     }
 
 };
