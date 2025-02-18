@@ -3,31 +3,4 @@ project(LeetCode_150_C__)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(LeetCode_150_C__ InterleavingString.cpp
-        main.cpp
-        main.cpp
-        ValidateBinarySearchTree.cpp
-        ValidateBinarySearchTree.cpp
-        RecoverBinarySearchTree.cpp
-        LongestSubstringWithoutRepeatingCharacters.cpp
-        LongestPalindromicSubstring.cpp
-        IntegerToRoman.cpp
-        3Sum.cpp
-        RemoveNNodeList.cpp
-        SearchRotatedSortedArray.cpp
-        CombinationSum.cpp
-        FirstIndexOfOccurence.cpp
-        JumpGameII.cpp
-        MaximumSubarray.cpp
-        ReveresedLinkList.cpp
-        UinuqePaths.cpp
-        Search2DMatrix.cpp
-        GenerateParentheses.cpp
-        mergedString.cpp
-        MoveZeros.cpp
-        LetterCombinationOfPhoneNumber.cpp
-        CombinationSumIII.cpp
-        LongestCommonSubsequence.cpp
-        PermutationsII.cpp
-        ReverseString.cpp
-)
+add_executable(LeetCode_150_C__ main.cpp)
