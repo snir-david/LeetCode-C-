@@ -25,4 +25,20 @@ public:
         }
         return idx;
     }
+
+      int strStr2(string haystack, string needle) {
+        size_t stringIdx = 0, needleLen = needle.size(), stringLen = haystack.size();
+        int found = -1;
+        while(stringIdx + needleLen <= stringLen){
+          std::string currentStr = haystack.substr(stringIdx, needleLen);
+          if(currentStr == needle)
+          {
+            found = stringIdx;
+            break;
+          }
+          stringIdx++;
+        }
+
+        return found;
+      }
 };
